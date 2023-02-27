@@ -1,6 +1,6 @@
 # linux-terminal
 
-Apenas um terminal linux feito com  HTML e CSS
+Apenas um terminal linux feito com  HTML, CSS e Javascript
 
 Nota: Nao e um terminal interativo, se trata de uma animacao
 
