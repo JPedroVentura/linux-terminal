@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style..css">
+    <title>Terminal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bash">
+            <nav>
+                <ul class="nav-itens">
+                    <li class="top-icon1"></li>
+                    <li class="top-icon2"></li>
+                    <li class="top-icon3"></li>
+                </ul>
+            </nav>
+            <div class="bash-content">
+                <span class="terminal-user">localhost@localhost~# <span class="multi-text"></span></span>
+                <span class="python"></span>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    let python = document.querySelector('.python');
+
+    let typeEffect = new Typed('.multi-text', {
+        strings: ['', 'apt-get update', 'nc -lvnp 1234', 'nmap -sS -sV -A 127.0.0.1', 'python3'],
+        typeSpeed: 50,
+        backSpeed: 10,
+        cursorChar: '_',
+        loop: false
+    });
+    setInterval(() => {
+        python.innerHTML = 'Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32Type "help", "copyright", "credits" or "license" for more information. >>>'
+    }, 9000)
+    
+
+</script>
+
+</html>
